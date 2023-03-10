@@ -252,6 +252,136 @@ body {
     padding-right: 0px;
 }
 
+.modal-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-top: 40px;
+
+    color: var(--brand-color-dark);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 12px;
+    padding: 0px 40px;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: var(--brand-color-light);
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    position: relative;
+}
+
+.contact-input {
+    width: 448px;
+    height: 40px;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.svg-form {
+    position: absolute;
+    top: 32px;
+    left: 15px;
+}
+
+.form-item textarea {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px;
+    background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    resize: none;
+}
+
+.form-item textarea::placeholder {
+    color: var(--brand-color-light);
+}
+
+.modal-checkbox a {
+    color: var(--brand-color);
+}
+
+.modal-checkbox input {
+    display: none;
+}
+
+.modal-checkbox {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    position: relative;
+}
+
+.modal-checkbox p {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--brand-color-light);
+}
+
+.send-button {
+    width: 200px;
+    height: 50px;
+    background: #2196f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    color: #ffff;
+
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+}
+
+.modal-send-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 19px;
+}
+
+.replace-checkbox {
+    width: 15px;
+    height: 16px;
+    border: 2px solid black;
+    border-radius: 4px;
+    position: absolute;
+    top: 4px;
+    left: 7px;
+}
+
+.contact-form input[type="checkbox"]:checked + .replace-checkbox {
+    background-color: var(--brand-color);
+    border: var(--brand-color);
+}
+
+.contact-form input[type="checkbox"] {
+    display: none;
+}
+
+.modal-checkbox svg {
+    position: absolute;
+}
+
 /* STRENGHTS SECTION */
 .strenghts-section {
     display: flex;
