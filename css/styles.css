@@ -115,7 +115,7 @@ body {
 
 .active::after {
     content: "";
-    border: 2px solid blue;
+    border: 2px solid var(--brand-color);
     width: 100%;
     position: absolute;
     bottom: -32px;
@@ -163,11 +163,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 1600px;
+    justify-content: center;
     margin: 0px auto;
 
     background: url("../images/background.jpg") no-repeat,
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    background-size: cover;
 }
 
 .request-section-title {
