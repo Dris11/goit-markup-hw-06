@@ -364,9 +364,13 @@ body {
     height: 16px;
     border: 2px solid black;
     border-radius: 4px;
-    position: absolute;
+    position: absolut;
     top: 4px;
     left: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
 }
 
 .contact-form input[type="checkbox"]:checked + .replace-checkbox {
@@ -374,12 +378,35 @@ body {
     border: var(--brand-color);
 }
 
+.contact-form input[type="checkbox"]:checked + .replace-checkbox svg {
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .contact-form input[type="checkbox"] {
     display: none;
 }
 
 .modal-checkbox svg {
-    position: absolute;
+    position: static;
+    opacity: 0;
+    fill: #ffffff;
+}
+
+.form-item input:focus + svg {
+    fill: var(--brand-color);
+}
+
+.contact-input:focus {
+    border-color: var(--brand-color);
+    outline: none;
+}
+
+.text-area:focus {
+    border-color: var(--brand-color);
+    outline: none;
 }
 
 /* STRENGHTS SECTION */
